@@ -996,6 +996,9 @@ $defs: # JSON Schema definition (maybe we should move these to a seperate file)
       - minEntityWidth
       - minEntityHeight
       - entityPadding
+      - nodeSpacing
+      - rankSpacing
+      - edgeSpacing
       - stroke
       - fill
       # TODO: fontSize is the only property that is not required, is this correct?
@@ -1040,6 +1043,21 @@ $defs: # JSON Schema definition (maybe we should move these to a seperate file)
         type: integer
         default: 15
         minimum: 0
+      nodeSpacing:
+        $ref: '#/$defs/FlowchartDiagramConfig/properties/nodeSpacing'
+        type: integer
+        default: 100
+        minimum: 50
+      rankSpacing:
+        $ref: '#/$defs/FlowchartDiagramConfig/properties/rankSpacing'
+        type: integer
+        default: 100
+        minimum: 50
+      edgeSpacing:
+        description: The spacing between two edges. 
+        type: integer
+        default: 100
+        minimum: 10
       stroke:
         description: Stroke color of box edges and lines.
         type: string

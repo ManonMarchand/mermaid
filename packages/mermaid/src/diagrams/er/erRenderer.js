@@ -604,9 +604,9 @@ export const draw = function (text, id, _version, diagObj) {
       rankdir: conf.layoutDirection,
       marginx: 20,
       marginy: 20,
-      nodesep: 100,
-      edgesep: 100,
-      ranksep: 100,
+      nodesep: conf.nodeSpacing,
+      edgesep: conf.edgeSpacing,
+      ranksep: conf.rankSpacing,
     })
     .setDefaultEdgeLabel(function () {
       return {};

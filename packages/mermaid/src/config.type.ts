@@ -750,6 +750,26 @@ export interface ErDiagramConfig extends BaseDiagramConfig {
    * Font size (expressed as an integer representing a number of pixels)
    */
   fontSize?: number;
+  /**
+   * Defines the spacing between nodes on the same level
+   *
+   * Pertains to horizontal spacing for TB (top to bottom) or BT (bottom to top) graphs,
+   * and the vertical spacing for LR as well as RL graphs.
+   *
+   */
+  nodeSpacing?: number;
+  /**
+   * Defines the spacing between nodes on different levels
+   *
+   * Pertains to horizontal spacing for TB (top to bottom) or BT (bottom to top) graphs,
+   * and the vertical spacing for LR as well as RL graphs.
+   *
+   */
+  rankSpacing?: number;
+  /** 
+   * Defines the spacing between edges.
+   */
+  edgeSpacing?: number;
 }
 /**
  * The object containing configurations specific for entity relationship diagrams
